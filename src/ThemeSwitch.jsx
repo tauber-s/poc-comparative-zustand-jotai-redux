@@ -7,7 +7,7 @@ import { useAtom } from "jotai";
 import { toggleThemeAtom } from "./stores/useThemeJStore";
 import { useThemeJ } from "./hooks/useThemeJ";
 
-function App() {
+const ThemeSwitch = () => {
   const toggleThemeZ = useThemeZStore((state) => state.toggleTheme);
   useThemeZ();
 
@@ -39,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default ThemeSwitch;
